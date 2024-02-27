@@ -4,7 +4,7 @@
 #------------------------------------------------------------------------------
 module "tutorial_source_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "3.18.1"
+  version = "5.5.2"
   #checkov:skip=CKV_AWS_130: "Ensure VPC subnets do not assign public IP by default"
   #checkov:skip=CKV_AWS_111: "Ensure IAM policies does not allow write access without constraints"
   #checkov:skip=CKV2_AWS_12: "Ensure the default security group of every VPC restricts all traffic"
@@ -34,7 +34,7 @@ module "tutorial_source_vpc" {
 
 module "tutorial_target_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "3.18.1"
+  version = "5.5.2"
   #checkov:skip=CKV_AWS_130: "Ensure VPC subnets do not assign public IP by default"
   #checkov:skip=CKV_AWS_111: "Ensure IAM policies does not allow write access without constraints"
   #checkov:skip=CKV2_AWS_12: "Ensure the default security group of every VPC restricts all traffic"

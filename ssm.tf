@@ -4,7 +4,7 @@
 module "vpc_ssm_endpoint_source" {
 
   source  = "terraform-aws-modules/vpc/aws//modules/vpc-endpoints"
-  version = "3.13.0"
+  version = "5.5.2"
 
   vpc_id             = module.tutorial_source_vpc.vpc_id
   security_group_ids = [module.source_https_443_security_group.security_group_id]
@@ -34,7 +34,7 @@ module "vpc_ssm_endpoint_source" {
 module "vpc_ssm_endpoint_target" {
 
   source  = "terraform-aws-modules/vpc/aws//modules/vpc-endpoints"
-  version = "3.13.0"
+  version = "5.5.2"
 
   vpc_id             = module.tutorial_target_vpc.vpc_id
   security_group_ids = [module.target_https_443_target_security_group.security_group_id]
